@@ -1,0 +1,61 @@
+Package: aggregateBioVar
+Type: Package
+Title:  Differential Gene Expression Analysis for Multi-subject scRNA-seq
+Version: 0.99.0
+Authors@R: c(
+    person(given = "Jason", family = "Ratcliff",
+        email = "jason-ratcliff@uiowa.edu", role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0001-7079-334X")),
+    person(given = "Andrew", family = "Thurman", 
+        email = "andrew.thurman2@gmail.com", role = "aut"),
+    person(given = "Michael", family = "Chimenti", 
+        email = "michael-chimenti@uiowa.edu", role = "ctb"),
+    person(given = "Alejandro", family = "Pezzulo", 
+        email = "alejandro-pezzulo@uiowa.edu", role = "ctb")
+    )
+URL: https://github.com/jasonratcliff/aggregateBioVar
+BugReports: https://github.com/jasonratcliff/aggregateBioVar/issues
+Description: For single cell RNA-seq data collected from more than 
+    one subject (e.g. biological sample or technical replicates),
+    this package contains tools to summarize single cell gene expression
+    profiles at the level of subject. A SingleCellExperiment object is taken as
+    input and converted to a list of SummarizedExperiment objects, where each
+    list element corresponds to an assigned cell type.
+    The SummarizedExperiment objects contain aggregate gene-by-subject
+    count matrices and inter-subject column metadata for individual subjects
+    that can be processed using downstream bulk RNA-seq tools.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+biocViews: Software, SingleCell, RNASeq, Transcriptomics,
+    Transcription, GeneExpression, DifferentialExpression
+Depends: 
+    R (>= 4.0)
+Imports:
+    stats,
+    methods,
+    S4Vectors,
+    SummarizedExperiment,
+    SingleCellExperiment,
+    Matrix,
+    tibble,
+    rlang
+Suggests:
+    BiocStyle,
+    magick,
+    knitr,
+    rmarkdown,
+    testthat,
+    BiocGenerics,
+    DESeq2,
+    magrittr,
+    dplyr,
+    ggplot2,
+    cowplot,
+    ggtext,
+    RColorBrewer,
+    pheatmap,
+    viridis
