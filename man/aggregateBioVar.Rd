@@ -26,7 +26,7 @@ metadata across and within cell types.
 Given an input gene-by-cell count matrix from a
 \linkS4class{SingleCellExperiment} object, sum within-subject gene counts
 into an aggregate gene-by-subject count matrix. Column metadata accessed
-by \link[SummarizedExperiment:colData]{SummarizedExperiment::colData()}
+by \link[SummarizedExperiment]{colData}
 are collated by \link{subjectMetaData} to remove variables with inter-cell
 intrasubject variation, effectively retaining between-subject variation.
 The summary operations are performed across all cell types and within each
