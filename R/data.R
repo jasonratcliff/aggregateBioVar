@@ -21,8 +21,10 @@
 #' 1311 genes (rows) from 2687 individual cells (columns).
 #' Features were subset by gene ontology annotation "ion transport" with
 #' included child terms ("anion transport", "cation transport", etc.).
-#' Includes a count matrix accessed by \link[SummarizedExperiment]{assay} and
-#' column metadata accessed by \link[SummarizedExperiment]{colData}.
+#' Includes a count matrix accessed by
+#' \link[SummarizedExperiment:SummarizedExperiment-class]{assay} and
+#' column metadata accessed by
+#' \link[SummarizedExperiment:SummarizedExperiment-class]{colData}.
 #' Metadata variables are defined as:
 #' \describe{
 #'   \item{orig.ident}{Biological sample identifier (i.e. subject)}

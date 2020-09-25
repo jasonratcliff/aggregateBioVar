@@ -1,7 +1,7 @@
 Package: aggregateBioVar
 Type: Package
 Title:  Differential Gene Expression Analysis for Multi-subject scRNA-seq
-Version: 0.99.1
+Version: 0.99.2
 Authors@R: c(
     person(given = "Jason", family = "Ratcliff",
         email = "jason-ratcliff@uiowa.edu", role = c("aut", "cre"),
